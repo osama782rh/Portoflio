@@ -1,0 +1,98 @@
+.certifications {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.certifications h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Fixer à 5 colonnes */
+  gap: 20px;
+  justify-items: center;
+}
+
+.cert-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 280px; /* Augmenter la largeur maximale */
+  margin: auto;
+  position: relative;
+}
+
+.cert-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cert-item p {
+  padding: 15px;
+  font-size: 16px;
+  color: #0073b1; /* Couleur des liens */
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cert-item p a {
+  color: inherit; /* Assurer que les liens ont la même couleur que le texte */
+  text-decoration: none;
+}
+
+.cert-item p a:hover {
+  text-decoration: underline; /* Souligner les liens au survol */
+}
+
+.cert-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation effects */
+.cert-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.cert-item:hover::before {
+  opacity: 1;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 1200px) { /* Changer le breakpoint pour 1200px */
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Ajuster la largeur minimale */
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications h2 {
+    font-size: 28px;
+  }
+
+  .cert-item {
+    max-width: 100%;
+  }
+
+  .cert-item p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

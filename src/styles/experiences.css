@@ -1,0 +1,34 @@
+.experiences {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+  }
+  
+  .experiences h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .experiences-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .experience {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience h3 {
+    margin-top: 0;
+  }
+  
+  .experience p {
+    margin: 5px 0;
+  }
+  

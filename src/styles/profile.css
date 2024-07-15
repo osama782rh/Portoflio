@@ -1,0 +1,107 @@
+.profile {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.profile h2 {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.profile h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #3498db;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permettre l'adaptation pour les petits écrans */
+  gap: 20px; /* Ajouter de l'espace entre les éléments */
+}
+
+.profile-image {
+  flex: 0 0 150px;
+  margin: 20px; /* Ajouter de l'espace autour de l'image */
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-details {
+  flex: 1;
+  max-width: 800px;
+  text-align: left; /* Aligner le texte à gauche */
+}
+
+.profile-details p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto; /* Centrer les sections */
+  max-width: 1200px; /* Limiter la largeur maximale */
+}
+
+.section-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(25% - 20px); /* Ajuster la largeur des éléments */
+  max-width: calc(25% - 20px);
+  min-width: 150px;
+}
+
+.section-item:hover {
+  transform: translateY(-5px);
+}
+
+.section-item img {
+  width: 100%;
+  height: 100px; /* Réduire la hauteur pour une meilleure visibilité */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.section-item:hover img {
+  transform: scale(1.05);
+}
+
+.section-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.section-content h3 {
+  margin: 10px 0;
+  font-size: 18px; /* Augmenter la taille de la police */
+  color: #333;
+}
+
+.section-content p {
+  font-size: 14px;
+  color: #777;
+}

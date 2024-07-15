@@ -1,0 +1,26 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #282c34;
+    overflow: hidden; /* Assurez-vous que l'image ne dépasse pas du conteneur rond */
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour s'assurer que l'image couvre entièrement le conteneur */
+    border-radius: 50%; /* Assurez-vous que l'image elle-même est ronde */
+  }
+  
+  .logo a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  

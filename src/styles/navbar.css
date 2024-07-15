@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px; /* Ajuster le padding pour ajouter de l'espace autour des éléments */
+  background-color: rgba(0, 0, 0, 0.7); /* Fond noir clair */
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.6s ease-in-out; /* Transition plus lente pour l'effet de disparition */
+  box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+}
+
+.hidden {
+  top: -100px; /* Masquer la navbar */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px; /* Ajuster l'espace entre les liens */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s; /* Transition pour la couleur */
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #007bff; /* Couleur de soulignement */
+  transition: width 0.3s; /* Transition pour l'effet de soulignement */
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Couleur de survol */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Étendre le soulignement sur tout le texte */
+}
