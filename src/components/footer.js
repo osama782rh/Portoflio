@@ -29,7 +29,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Osama Rahim. Tous droits réservés.
+        &copy; {new Date().getFullYear()} Osama Rahim. Tous droits réservés. 
       </div>
     </footer>
   );
