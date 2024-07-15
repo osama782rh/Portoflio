@@ -4,7 +4,6 @@ import Header from './components/header';
 import About from './components/about';
 import Skills from './components/skills';
 import Contact from './components/contact';
-import Profile from './components/profile';
 import Experiences from './components/experiences';
 import Certifications from './components/certifications';
 import Navbar from './components/navbar';
