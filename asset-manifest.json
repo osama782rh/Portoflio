@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portoflio/static/css/main.8daa586d.css",
-    "main.js": "/Portoflio/static/js/main.f3ea38fc.js",
+    "main.css": "/Portoflio/static/css/main.c7aee254.css",
+    "main.js": "/Portoflio/static/js/main.97b52189.js",
     "static/js/453.1407b060.chunk.js": "/Portoflio/static/js/453.1407b060.chunk.js",
     "static/media/java_basic certificate.pdf": "/Portoflio/static/media/java_basic certificate.7dc33ef2aa35306fd081.pdf",
     "static/media/problem_solving_intermediate certificate.pdf": "/Portoflio/static/media/problem_solving_intermediate certificate.3cf85e399e6750df30bf.pdf",
@@ -49,12 +49,12 @@
     "static/media/js.svg": "/Portoflio/static/media/js.a85a7da1524412b41f8df2bf45e4280a.svg",
     "static/media/c.svg": "/Portoflio/static/media/c.944f64e778ba72e9a022ba4a67bb1c4a.svg",
     "index.html": "/Portoflio/index.html",
-    "main.8daa586d.css.map": "/Portoflio/static/css/main.8daa586d.css.map",
-    "main.f3ea38fc.js.map": "/Portoflio/static/js/main.f3ea38fc.js.map",
+    "main.c7aee254.css.map": "/Portoflio/static/css/main.c7aee254.css.map",
+    "main.97b52189.js.map": "/Portoflio/static/js/main.97b52189.js.map",
     "453.1407b060.chunk.js.map": "/Portoflio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8daa586d.css",
-    "static/js/main.f3ea38fc.js"
+    "static/css/main.c7aee254.css",
+    "static/js/main.97b52189.js"
   ]
 }
