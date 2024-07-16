@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portoflio/static/css/main.e3cffeef.css",
+    "main.css": "/Portoflio/static/css/main.56c326f3.css",
     "main.js": "/Portoflio/static/js/main.9a1d2071.js",
     "static/js/453.1407b060.chunk.js": "/Portoflio/static/js/453.1407b060.chunk.js",
     "static/media/java_basic certificate.pdf": "/Portoflio/static/media/java_basic certificate.7dc33ef2aa35306fd081.pdf",
@@ -49,12 +49,12 @@
     "static/media/js.svg": "/Portoflio/static/media/js.a85a7da1524412b41f8df2bf45e4280a.svg",
     "static/media/c.svg": "/Portoflio/static/media/c.944f64e778ba72e9a022ba4a67bb1c4a.svg",
     "index.html": "/Portoflio/index.html",
-    "main.e3cffeef.css.map": "/Portoflio/static/css/main.e3cffeef.css.map",
+    "main.56c326f3.css.map": "/Portoflio/static/css/main.56c326f3.css.map",
     "main.9a1d2071.js.map": "/Portoflio/static/js/main.9a1d2071.js.map",
     "453.1407b060.chunk.js.map": "/Portoflio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3cffeef.css",
+    "static/css/main.56c326f3.css",
     "static/js/main.9a1d2071.js"
   ]
 }
