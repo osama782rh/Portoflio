@@ -6,6 +6,7 @@
   background-color: rgba(0, 0, 0, 0.7); /* Fond noir clair */
   position: fixed;
   width: 100%;
+  top: 0; /* Assurez-vous que la navbar est en haut */
   z-index: 10;
   transition: top 0.6s ease-in-out; /* Transition plus lente pour l'effet de disparition */
   box-sizing: border-box; /* Inclure le padding dans la largeur totale */
@@ -23,35 +24,61 @@
 .nav-links {
   list-style: none;
   display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px; /* Ajuster l'espace entre les liens */
+  gap: 20px; /* Espace entre les liens */
 }
 
 .nav-links a {
+  color: white; /* Assurez-vous que les liens sont visibles */
   text-decoration: none;
-  color: white;
-  font-size: 18px;
-  position: relative;
-  transition: color 0.3s; /* Transition pour la couleur */
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #007bff; /* Couleur de soulignement */
-  transition: width 0.3s; /* Transition pour l'effet de soulignement */
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #007bff; /* Couleur de survol */
+  color: #3498db; /* Couleur au survol */
 }
 
-.nav-links a:hover::after {
-  width: 100%; /* Étendre le soulignement sur tout le texte */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px; /* Réduire le padding */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir pour le menu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
 }

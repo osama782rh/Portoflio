@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/navbar.css';
 import Logo from './logo';
 
 function Navbar() {
-  const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(true);
+  const [menuActive, setMenuActive] = useState(false);
   let lastScrollY = window.scrollY;
 
   const handleScroll = () => {
@@ -17,34 +17,33 @@ function Navbar() {
     lastScrollY = window.scrollY;
   };
 
+  const handleToggle = () => {
+    setMenuActive(!menuActive);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
-
-  const handleNavigation = (path, anchor) => {
-    navigate(path);
-    setTimeout(() => {
-      const element = document.getElementById(anchor);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
-  };
+  }, [handleScroll]);
 
   return (
     <nav className={`navbar ${showNavbar ? '' : 'hidden'}`}>
       <div className="logo-container">
         <Logo />
       </div>
-      <ul className="nav-links">
-        <li><a href="#home" onClick={() => handleNavigation('/', 'home')}>Accueil</a></li>
-        <li><a href="#skills" onClick={() => handleNavigation('/', 'skills')}>Compétences</a></li>
-        <li><a href="#contact" onClick={() => handleNavigation('/', 'contact')}>Contact</a></li>
-        <li><a href="#profile" onClick={() => handleNavigation('/profile', 'profile')}>Profil</a></li>
-        <li><a href="#experience" onClick={() => handleNavigation('/experiences', 'experiences')}>Expériences</a></li>
+      <div className="nav-toggle" onClick={handleToggle}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={`nav-links ${menuActive ? 'active' : ''}`}>
+        <li><Link smooth to="/home#home" onClick={() => setMenuActive(false)}>Accueil</Link></li>
+        <li><Link smooth to="/home#skills" onClick={() => setMenuActive(false)}>Compétences</Link></li>
+        <li><Link smooth to="/home#contact" onClick={() => setMenuActive(false)}>Contact</Link></li>
+        <li><Link smooth to="/profile#profile" onClick={() => setMenuActive(false)}>Profil</Link></li>
+        <li><Link smooth to="/experiences#experiences" onClick={() => setMenuActive(false)}>Expériences</Link></li>
       </ul>
     </nav>
   );
